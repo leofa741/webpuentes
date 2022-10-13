@@ -7,7 +7,6 @@ import { Home } from '../pages/Home';
 import { Login } from '../pages/Login';
 import { Register } from '../pages/Register';
 import { NavBar,  Slider } from '../ui';
-import {NavBarl} from '../ui/components/navbar/NavBarl';
 import { Contact } from '../components';
 
 
