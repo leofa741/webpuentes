@@ -5,7 +5,10 @@ import logo from '/src/assets/icons/blue1.png'
 import Button from '@mui/material/Button';
 import './styles.css'
 
-const classNameFunc = ({ isActive  }) => (isActive ? "active" : "");
+
+
+const classNameFunc = ( isActive:any ) => (isActive ? "active" : "");
+
 
 
 export const NavBar = () => {
