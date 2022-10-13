@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import{BrowserRouter} from 'react-router-dom'
 
 
-import '../src/assets/css/HomeContenido-copy.css'
+
 import '../src/assets/css/slick.css'
 import '../src/assets/css/components.css'
 import '../src/assets/css/bootstrap.min.css'
