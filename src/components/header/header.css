@@ -1,0 +1,92 @@
+.showcase-btn {
+    margin: 1.3rem;
+  }
+
+  
+/* ----------------------------------------------------------------
+     [ 05 Start Showcase ]
+-----------------------------------------------------------------*/
+
+#showcase {
+    height: 98vh;
+    background-image: linear-gradient(to right bottom, rgba(30, 101, 155, 0.856), rgba(29, 116, 182, 0.8), rgba(157, 229, 223, 0.8)), url(../src/assets/img/planetabg.jpeg);
+    background-size: cover;
+    background-position: center;  
+    background-attachment:fixed;
+    clip-path: ellipse(rgba(29, 116, 182, 0.8) 100% at 50% 0%);
+  }
+
+
+  
+  .showcase-caption {
+    position: relative;
+    text-align: center;
+    top: 70px;
+  }
+  
+  .showcase-caption h4{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+  }
+  
+  .showcase-caption h1{
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+   width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+
+
+  }
+  
+  .showcase-caption p{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 2.5;
+  }
+  
+  .showcase-button {
+    margin-top: 60px;   
+  }
+  
+  
+  @media (max-width: 705.98px) {
+
+
+    .showcase-caption h1{
+      font-size: 25px;
+    }
+    .showcase-caption h4{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    
+      }
+  
+    .showcase-caption p{
+      font-size: 13px;
+    }
+  
+    .showcase-btn {
+      margin: 1rem;
+    }
+
+
+  
+  
+
+
+}
+  /* ----------------------------------------------------------------
+       [ 05 End Showcase ]
+  -----------------------------------------------------------------*/
+  

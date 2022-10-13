@@ -1,0 +1,62 @@
+  /* ----------------------------------------------------------------
+       [ 13 Start Footer ]
+  -----------------------------------------------------------------*/
+  footer {
+    padding: 80px 0;
+    background-color: #5cacc1;
+    -webkit-clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
+    clip-path: polygon(51% 46%, 100% 73%, 100% 100%, 0 100%, 0 70%);
+  }
+  
+  .footer__box {
+    padding-top: 150px;
+  }
+  
+  footer .socialf a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 5px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;   
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;    
+  
+  }
+  footer .social a:hover {
+    color: #fff;
+  }
+  
+  
+  footer p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-align: center;   
+    transition: all 0.3s ease;
+  }
+
+  .imglogo1{ 
+    width: 130px;
+    height: 130px;   
+   
+    margin-top: -95px;
+    margin-left: -50px;
+    position: absolute;
+  
+  }
+
+
+  
+  
+  
+  
+  /* ----------------------------------------------------------------
+       [ End Footer ]
+  -----------------------------------------------------------------*/

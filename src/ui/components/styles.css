@@ -1,0 +1,378 @@
+:root {
+  --primary: #06A3DA;
+  --secondary: #34AD54;
+  --light: #EEF9FF;
+  --dark: #091E3E;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #F7F7FC;
+  font-family: "Roboto", sans-serif;
+  margin-top: -733px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between  !important;
+  align-items: center;
+  padding: 0 1rem;
+  height:  4.2rem; 
+  align-items: center;
+  background-image: linear-gradient(to left, #0080bccc, #0094c5cc, #00a7c9cc, #23bbc9cc, #56cec8cc);
+ 
+}
+
+.navbar.colorChange{
+  background: #62cbe093;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.navbar.colorChange .nav-link{
+  color: #091E3E;
+  transition: color 0.5s ease-in-out;
+}
+
+.navbar.colorChange .active {
+  color: #ffffff;
+  transition: color 0.5s ease-in-out;
+}
+
+header {
+  background: #ff009500;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: all 0.5s ease;
+
+}
+.logo {
+  color: #FFF;
+  font-size: 26px;     
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+ .imglogo{ 
+  width: 30px;
+  height: 30px;
+  margin-left: 6px;
+  margin-top: 1px;
+  position: absolute;
+
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+
+  padding: 8px 20px; 
+  background-image: linear-gradient(#ffffff, #ffffff,#0b036d);
+  background-position: 50% 90%;
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  background-size: 100% 5px;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: #000000;
+  background-size: 70% 1px;
+  text-decoration: none;
+}
+.submenu{
+  display: none;
+  width: 160px;
+  position: absolute; 
+  border-radius: 9px;  
+  background-image: linear-gradient(to right, #0080bccc, #0094c5cc, #00a7c9cc, #23bbc9cc, #56cec8cc) !important;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+  margin-left: -10px;
+
+
+}
+.submenu ul li{
+  display: block;
+  margin: 10px 0;
+  background-image: linear-gradient(to left, #0080bccc, #0094c5cc, #00a7c9cc, #23bbc9cc, #56cec8cc) !important;
+}
+
+.submenu ul li a{
+  display: block;
+  padding: 5px 10px;
+  background: #F7F7FC;
+  color: #000000;
+  border-radius: 5px;
+  transition: all 0.743s ease;
+ 
+}
+
+.submenu ul li a:hover{
+  background-image: linear-gradient(to left, #0080bccc, #0094c5cc, #00a7c9cc, #23bbc9cc, #56cec8cc) !important;
+  color: #fff !important;
+
+ 
+}
+
+ul li:hover .submenu {
+  display: block;   
+
+  font-size: 34px !important;
+  font-weight: 40; 
+  text-decoration: none;  
+  transition: all 0.443s ease;
+  background-image: linear-gradient(to left, #0080bccc, #0094c5cc, #00a7c9cc, #23bbc9cc, #56cec8cc) !important;
+}
+
+
+.linkprod:hover ~ .submenu {
+  display: block;
+ 
+  color: rgb(12, 12, 12) !important;
+  font-size: 34px !important;
+  font-weight: 40; 
+  text-decoration: none;  
+
+
+}
+
+.container {  
+  top: 300px;
+}
+
+
+p {
+  font-weight: normal;
+  font-family: 'Exo 2', sans-serif;
+}
+.text {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 10px;
+}
+.box:hover .text{
+  opacity:1;
+}
+h1 {
+  width: 250px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+
+#icon {
+
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+#icon svg {
+  color: rgb(255, 255, 255);
+  height: 28px;
+  transition: all .3s ease;
+}
+
+#icon:hover {
+  background: transparent;
+}
+
+#icon:hover svg {
+  color: #fafbff;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+/* Youtube link */
+.link {
+  position: fixed;
+  background-color: #D12322;
+  padding: 23px 40px;
+  right: -100px;
+  border-radius: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(241, 11, 11);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .1s ease-in-out;
+}
+
+.link i {
+  padding-left: 7px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  background-color: rgb(221, 27, 27);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  nav {
+      border-bottom: 1px solid transparent   
+  }
+
+  ul {
+      position: absolute;
+      width: 70%;
+      height: 100vh;
+ 
+      left: 0;
+      top: 130px;
+      text-align: center;
+      display: none;
+      margin-top: auto;
+      -webkit-transition:all 500ms ease;
+      -o-transition:all 500ms ease;
+      transition:all 1500ms ease; /* Establecemos una transición a todas las propiedades */  
+  }
+
+  ul li {
+      display: block;
+      -webkit-transition:all 500ms ease;
+      -o-transition:all 500ms ease;
+      transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+    background-color: #008DB8 !important;
+  }
+
+ 
+
+  ul li a {
+      display: block;
+      padding: 20px;
+      text-decoration: none !important;
+     
+      
+    	-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+  }
+
+  #icon {
+      display: block; 
+
+  }
+
+  #checkbox:checked~ul {
+      display: block;     
+
+  }
+
+  .submenu{
+    display: none;
+    width: 140px; 
+    height: 50vh;
+    position: absolute;
+    background: #dddde2;
+    box-shadow: 0px 0px 10px rgba(2, 2, 2, 0.2);
+    z-index: 100;
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 0.743s ease;
+    text-align: left;
+    left: 220px;
+    top: 30px;
+  }
+  
+  
+
+  
+  .submenu ul li{
+  display: none !important;
+  margin: 10px 0 !important;
+  background: #dddde2 !important;
+  }
+ 
+}
+
+.submenu ul li a{
+  display: block;
+  padding: 5px 10px;
+
+  color: #000000;
+  border-radius: 5px;
+  transition: all 0.743s ease;
+
+ 
+}
+
+.submenu ul li a:hover{
+  display: none !important;
+  color: #fff !important;
+  background: #000000 !important;
+
+
+}
+
+ul li:hover .submenu {
+  display: block;
+
+  
+  font-size: 34px !important;
+  font-weight: 40; 
+  text-decoration: none;  
+  background: #008FB9 !important;
+  transition: all 0.443s ease;
+
+}
+
+
+.linkprod:hover ~ .submenu {
+  display: none !important;
+
+  color: rgb(12, 12, 12) !important;
+  font-size: 34px !important;
+  font-weight: 40; 
+  text-decoration: none;  
+
+
+}
+
+  
+  
+
+}
